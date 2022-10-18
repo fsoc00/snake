@@ -7,10 +7,9 @@ class Food(Turtle):
         self.penup()
         self.shapesize(0.5,0.5,1)
         self.speed(0)
-        randomX = random.randint(-270,270)
-        randomY = random.randint(-270,270)
+        self.random_food()
         self.goto(randomX,randomY)
-    def randomFood(self):
+    def random_food(self):
         randomX = random.randint(-270,270)
         randomY = random.randint(-270,270)
         self.goto(randomX,randomY)
