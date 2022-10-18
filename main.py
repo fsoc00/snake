@@ -31,7 +31,7 @@ while while_game_is_on:
         sb.game_over()
     elif snake.snake_head.distance(food) < 17:
         game_score += 1
-        food.randomFood()
+        food.random_food()
         snake.add_snake_len()
     for i in snake.snake[1:]:
         if snake.snake_head.distance(i) < 10:
